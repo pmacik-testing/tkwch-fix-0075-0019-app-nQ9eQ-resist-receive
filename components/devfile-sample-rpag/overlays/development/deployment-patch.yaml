@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-rpag
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkwch-fix-0075-0019-tenant/tkwch-fix-0075-0019-app/devfile-sample-rpag@sha256:ee5fe85e0ee6085e2168da2f54a5c63292cd3a2f70edb69a9c12e1fa6fc7a518
+        name: my-nodejs
+        resources: {}
+status: {}
